@@ -11,6 +11,5 @@ def array_mul(nums: List[int]) -> List[int]:
         value[i] *= v
         v *= nums[i]
     return value
-print(array_mul([1, 2, 3, 4]))
-
     
+print(array_mul([1, 2, 3, 4]))  
