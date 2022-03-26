@@ -5,16 +5,13 @@ class TreeNode:
         self.val = val
         self.left = left
         self.right = right
-class Tree:
-    def __init__(self):
-        self.root = None
 class Solution:
     def maxDepth(self, root: TreeNode) -> int:
         if root is None:
             return 0
         queue = collections.deque([root])
         depth = 0
-
+        return queue.val
         while queue:
             depth += 1
             for _ in range(len(queue)):
